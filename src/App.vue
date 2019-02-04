@@ -46,6 +46,22 @@ main {
   height: $app-height;
   width: $app-width;
   text-align: center;
+  overflow: hidden;
+  scrollbar-color: hsl(0, 0%, 25%) transparent;
+  scrollbar-width: thin;
+}
+
+#app:hover {
+	overflow-y: overlay
+}
+
+#app::-webkit-scrollbar {
+	background: transparent;
+	width: 0.7em;
+}
+
+#app::-webkit-scrollbar-thumb {
+	background: hsl(0, 0%, 25%);
 }
 
 h1,
